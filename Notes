@@ -1,0 +1,8 @@
+Inline elemnents take the required space:-
+(a,span,img,input,label,strong,em,br,code,sub,sup,b,i,u,small,mark,q,cite,kbd,samp,var,time,abbr,data,acronym)
+
+Block elemnents take the whole space:- 
+(p,div,h1,ol,ul,li,form,table,section,header,footer,nav,article,main,aside,fieldset,dl,dd,dt,pre,canvas,blockquote,hr,figure,tfoot,address)
+
+Video tag attributes - controls,autoplay,loop,muted,poster-(to add thumbnail)
+Audio tag attributes - controls,autoplay,loop,muted,preload
