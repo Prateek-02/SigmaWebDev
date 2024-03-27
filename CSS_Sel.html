@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Seletor */
+        div{
+            background-color: greenyellow
+        }
+
+        /* Class Selector */
+        .red{
+            background-color: red;
+        }
+
+        /* ID Selector */
+        #blue{
+            background-color: aqua;
+        }
+
+        /* Child Selector */
+        div > p{
+            color: beige;
+            background-color: blueviolet;
+        }
+
+        /* Descendent Selectors */
+        div p{
+            color: rgb(60, 99, 100);
+            background-color: chocolate;
+        }
+
+        /* Universal Selectors */
+        *{
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: darkblue
+        }
+
+        a:link{
+            color: green;
+        }
+
+        a:active{
+            background-color: red;
+        }
+
+        a:hover{
+            background-color: brown;
+        }
+
+        p:first-child{
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div>
+        I am a div
+        <article>
+            <p>I am a Paragraph inside div</p>
+        </article>
+    </div>
+    <div class="red">
+        I am also a div
+    </div>
+    <div id="blue">
+        I am a new div
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://facebook2.com">Go to Facebook</a>
+</body>
+</html>
