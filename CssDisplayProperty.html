@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            display: inline-block;
+            width: 200px;
+            border: 2px solid blue;
+            padding: 20px;
+            margin: 30px;
+        }
+        .box1{
+            /*display: none;*/
+            /* visibility: hidden; */
+            display: inline-flex;
+            justify-content: center;
+
+        }
+        
+    </style>
 </head>
 <body>
-    
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">also a nice box</div>
+    <span>I am a good</span>
+    <span>boy</span>
 </body>
 </html>
