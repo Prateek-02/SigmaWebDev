@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    position: sticky;
+    top: 0;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+
+}
+.logo img{
+    width: 170px;
+    height: 60px;
+}
+
+.right ul{
+    display: flex;
+    gap: 30px;
+}
+
+.right ul li{
+    list-style-type: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+
