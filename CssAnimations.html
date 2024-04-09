@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CssAnimations</title>
+    <style>
+        .container{
+            background-color: rgb(32, 111, 181);
+            height: 60vh;
+            width: 50vw;
+        }
+        .box{
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            /* animation: PrateekAnimation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-direction: alternate-reverse;
+            animation-play-state: paused; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: PrateekAnimation 3s ease-in-out 3s 1,
+                       Prateek2 3s ease-in-out 3s 1;
+        }
+
+        @keyframes PrateekAnimation {
+            from{
+                background-color: red;
+            }
+            to{
+                transform: translateX(500px);
+                background-color: blueviolet;
+            }
+        }
+
+        @keyframes Prateek2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(250deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
 </body>
 </html>
