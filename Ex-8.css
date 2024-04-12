@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+    background-color: blue;
+    height: 100vh;
+    width: 100vw;
+}
+
+.box{
+    background-color: red;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 70px;
+    animation: animateX 4s linear infinite,
+               animateY 0.8s infinite ease-out alternate;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    
+}
+
+@keyframes animateX {
+    from{
+        left: 0;
+    }
+    to{
+        left: 90%;
+    }
+}
+@keyframes animateY {
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 90%;
+    }
+}
