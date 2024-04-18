@@ -15,3 +15,7 @@ else{
 }
 
 console.log("Your number is: "+a)
+
+document.title = "Hey i am a good"
+
+document.body.style.backgroundColor="red";
