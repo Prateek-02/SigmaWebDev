@@ -15,7 +15,7 @@ console.log("Type of array: "+typeof(arr))
 
 console.log(arr.toString())    // toString is a method to convert array to string
 
-console.log(arr.join(" and "))   // join is used to join all the array elements using a separator
+console.log(arr.join(" and "))   // join is used to join all the array elements using a separator and convert all values to string
 
 arr.pop()      // it will pop the last element
 console.log(arr) 
@@ -51,3 +51,7 @@ x.reverse()              /// it reverses the array
 console.log(x)
 
 console.log(Array.from("Prateek"))      // it will create an array using the string
+
+console.log(x.indexOf(9));      // it will return the index of the given element
+
+console.log(x.includes(5));     // it will return that value is present or not in the array
