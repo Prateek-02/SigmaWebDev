@@ -31,4 +31,7 @@ function returnSecondValue(value){
 
 let ans = returnSecondValue(myarr);
 console.log("Second value is: "+ans);
+//or
+let ans2 = returnSecondValue([100,200,500,800]);
+console.log("Second value is: "+ans2);
 
