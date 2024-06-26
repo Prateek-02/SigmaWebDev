@@ -25,7 +25,7 @@ function one(){
     // console.log(website);
     Two();
 }
-// one();
+one();
 
 if(true){
     const username = "prateek";
