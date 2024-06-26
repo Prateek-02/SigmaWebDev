@@ -1,3 +1,7 @@
-user.welcomeMessage();
-// user.username = "Sam";
-// user.welcomeMessage();
+const chai  = () =>{
+    let username = "Prateek"
+    console.log(this);
+
+}
+
+chai();

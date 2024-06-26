@@ -1,12 +1,12 @@
-const user = {
-    username: "Prateek",
-    price: 999,
+// const user = {
+//     username: "Prateek",
+//     price: 999,
 
-    welcomeMessage : function(){
-        console.log(`${this.username} , welcome to website`);
-        console.log(this);
-    }
-}
+//     welcomeMessage : function(){
+//         console.log(`${this.username} , welcome to website`);
+//         console.log(this);
+//     }
+// }
 
 // user.welcomeMessage();
 // user.username = "Sam";
@@ -16,7 +16,7 @@ const user = {
 
 // function chai(){
 //     let username = "Prateek"
-//     console.log(this.username);
+//     console.log(this.username);   // cannot access this inside funuction
 // }
 // chai();
 
@@ -24,7 +24,6 @@ const user = {
 // const chai  = function() {
 //     let username = "Prateek"
 //     console.log(this.username);
-    
 // }
 
 
@@ -38,11 +37,14 @@ const user = {
 
 
 // const addTwo = (num1,num2) =>{
-//     return num1+num2;
+//     return num1+num2;          // explicit return
 // }
 
 
-const addTwo = (num1,num2) =>  num1+num2;
+// const addTwo = (num1,num2) =>  num1+num2;       // implicit 
+
+const addTwo = (num1,num2) =>  ({username:"Prateek"})       // return object
 
 
 console.log(addTwo(3,4));
+
