@@ -8,3 +8,12 @@ firstly new variable environment and thread box will be created after that 2 pha
 2. Execution phase :- where value will be allocated to our variables
 
 3. Global execution phase :- where our code will get executed
+
+
+********Call Stack*******
+
+LIFO (Last In First Out)  this concept will happen here
+
+The function which came first will be executed last
+
+
