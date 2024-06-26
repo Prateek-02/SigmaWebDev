@@ -1,0 +1,10 @@
+There are 3 phases:-
+1. Global execution phase  2. Functitonal execution phase  3. Eval execution phase
+
+firstly new variable environment and thread box will be created after that 2 phases will be created:-
+
+1. Memory phase :- where we define our variables
+
+2. Execution phase :- where value will be allocated to our variables
+
+3. Global execution phase :- where our code will get executed
