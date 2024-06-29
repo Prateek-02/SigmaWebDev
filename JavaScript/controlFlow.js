@@ -80,7 +80,9 @@ else{
 */
 
 
-// Switch
+// Switch Case
+
+/*
 
 const month = 9;
 switch(month){
@@ -125,3 +127,61 @@ switch(month){
         break;
 
 }
+*/
+
+
+// Truthy and falasy value
+
+/*
+const userEmail = [];
+
+if(userEmail){
+    console.log("Got user email");
+}
+else{
+    console.log("Don't have user email");
+}
+
+// Falasy values:- False, 0, -0, "", BigInt 0n, null, undefined, NaN
+
+//Truthy values:- True, 1, "abc", "0", 'false', [], " ", {}, function(){}
+
+if(userEmail.length === 0){
+    console.log("Array is empty");
+}
+else{
+    console.log("Array is not empty");
+}
+
+const emptyObj = {};
+
+if(Object.keys(emptyObj).length == 0){
+    console.log("Object is empty");
+}
+else{
+    console.log("Object is not empty");
+}
+*/
+
+
+// Nullish Coalescing Operator (??): null undefined
+
+/*
+let val1;
+
+// val1 = 5 ?? 10;            // output = 5;
+// val1 = null ?? 10;         // output = 10; (if the values is null then assign it null otherwise the given number)
+// val1 = undefined ?? 15;    // output = 15; (if the values is undefined then assign it undefined otherwise the given number)
+val1 = null ?? 10 ?? 15;      // output = 10;
+
+console.log(val1);
+*/
+
+
+// Ternery Operator
+
+// condition ? true : false
+
+const iceTeaPrice = 100;
+
+iceTeaPrice <= 80 ? console.log("Less than 80") : console.log("More then 80")
