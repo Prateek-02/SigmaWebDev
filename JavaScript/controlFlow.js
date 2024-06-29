@@ -1,4 +1,4 @@
-// if
+// if else
 
 /*
 const isUSerloggedIn = true;
@@ -60,7 +60,15 @@ else{
 
 
 const userLoggedIn = true;
-const debitCard = false;
+const debitCard = true;
+
+const loggedInFromGoogle = false;
+const loggedInFromEmail = true;
+
+
+if (loggedInFromGoogle || loggedInFromEmail){
+    console.log("User Logged In");
+}
 
 if(userLoggedIn && debitCard){
     console.log("Allowed to buy courses");
