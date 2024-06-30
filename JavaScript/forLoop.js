@@ -8,6 +8,15 @@ for(let i = 0;i<a.length;i++){
 }
 */
 
+// loop inside loop
+
+for(let i=0;i<=10;i++){
+    console.log(`Outer loop vallue: ${i}`);
+    for(let j=0;j<=10;j++){
+        console.log(`Inner loop value ${j} and Outer loop value ${i}`);
+    }
+}
+
 // forEach loop
 /*
 a.forEach((value,index,arr)=>{
