@@ -1,0 +1,9 @@
+Innertext :- Gives the visible values/text only.
+
+textContent :- Gives the invivibe/hidden value/text also.
+
+InnerHTML :- Gives the whole HTML value like tags.
+
+querySelector :- Gives you the first value
+
+querySelectorAll :-  Gives 
