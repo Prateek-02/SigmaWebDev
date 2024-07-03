@@ -10,6 +10,7 @@ for(let i = 0;i<a.length;i++){
 
 // loop inside loop
 
+/*
 for(let i=1;i<=10;i++){
     console.log(`Outer loop value: ${i}`);
     for(let j=1;j<=10;j++){
@@ -17,6 +18,7 @@ for(let i=1;i<=10;i++){
         console.log(i + "X" + j + "=" + i*j);
     }
 }
+*/
 
 // forEach loop
 /*
@@ -61,10 +63,12 @@ let arr = [1,13,5,7,11]
 
 // Map
 
+/*
 let newArr = arr.map(e=>{
     return e**2
 })
 console.log(newArr)
+*/
 
 
 // Filter
@@ -77,7 +81,17 @@ const greaterThanseven = (e) =>{
 console.log(arr.filter(greaterThanseven))
 
 
+const myNums = [1,2,3,4,5,6,7,8,9,10];
+const newNums = myNums.filter( (e) => {
+    return e > 4;
+})
+
+console.log(newNums);
+
+
 //Reduce
+
+/*
 let arr2 = [1,2,3,4,5,6]
 
 const red = (a,b) => {
@@ -85,3 +99,5 @@ const red = (a,b) => {
 }
 
 console.log(arr2.reduce(red))
+*/
+
