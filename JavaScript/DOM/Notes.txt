@@ -4,6 +4,6 @@ textContent :- Gives the invivibe/hidden value/text also.
 
 InnerHTML :- Gives the whole HTML value like tags.
 
-querySelector :- Gives you the first value
+querySelector :- Gives you the first value/element
 
 querySelectorAll :-  Gives 
