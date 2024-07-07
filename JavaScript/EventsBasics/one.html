@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Events</title>
+    <style>
+        ul li{
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body style="background-color: black; color: white">
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="one" src="https://images.pexels.com/photos/15804651/pexels-photo-15804651/free-photo-of-people-together-on-motorcycle-on-road-in-mountains.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                    alt="">
+            </li>
+            <li><img width="200px" id="two" src="https://images.pexels.com/photos/3721535/pexels-photo-3721535.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                    alt="">
+            </li>
+            <li><img width="200px" id="three" src="https://images.pexels.com/photos/21352835/pexels-photo-21352835/free-photo-of-sagrada-familia-in-barcelona-in-spain.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                    alt="">
+            </li>
+            <li><img width="200px" id="four" src="https://images.pexels.com/photos/25489323/pexels-photo-25489323/free-photo-of-a-restaurant-with-plants-and-flowers-in-front-of-it.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                    alt="">
+            </li>
+            <li><img width="200px" id="five" src="https://images.pexels.com/photos/26611646/pexels-photo-26611646/free-photo-of-a-small-wooden-stool-with-a-cup-on-it.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                    alt="">
+            </li>
+            <li><a style="color:aliceblue" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // type, timestamp, defaultprevented
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shidftkey, keyCode
+
+
+    // document.getElementById('four').onclick = function(){
+    //     alert("House Clicked");
+    // }
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("Clicked inside the ul")
+    // },false)
+ 
+    // document.getElementById('four').addEventListener('click',function(e){
+    //     console.log("House Clicked");
+    //     e.stopPropagation();
+    // },false)
+    
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log("Google clicked")
+    // },false)
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName == "IMG"){
+            let removeIt = e.target.parentNode;
+            removeIt.remove();
+        }
+
+    },false)
+</script>
+</html>
