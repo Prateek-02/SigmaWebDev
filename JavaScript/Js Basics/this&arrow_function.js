@@ -16,7 +16,7 @@
 
 // function chai(){
 //     let username = "Prateek"
-//     console.log(this.username);   // cannot access this inside funuction
+//     console.log(this.username);   // cannot access this inside function
 // }
 // chai();
 
