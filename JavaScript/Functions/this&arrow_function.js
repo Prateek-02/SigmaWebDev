@@ -48,3 +48,8 @@ const addTwo = (num1,num2) =>  ({username:"Prateek"})       // return object
 
 console.log(addTwo(3,4));
 
+const printHello = () =>{
+    console.log("Hello");
+}
+
+printHello();
