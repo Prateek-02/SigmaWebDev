@@ -45,10 +45,12 @@ for (const key in obj) {
 */
 
 //forOf loop
+
 /*
 for (const iterator of a) {
-    console.log(a)
+    console.log(iterator)
 }
 */
+
 
 
