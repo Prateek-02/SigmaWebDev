@@ -52,12 +52,44 @@ num.forEach(calcSquare);
 
 // 3 (Filter out the marks of students that scored 90+)
 
+/*
 let arr = [30,93,92,99,94,90];
 
-let Marks = arr.filter((marks) => {
+let Toppers = arr.filter((marks) => {
     return marks > 90;
 })
 
-console.log(`Marks greater than 90 are: [${Marks}]`);
+console.log(`Marks greater than 90 are: [${Toppers}]`);
+
+*/
+
+
+// 4(Take a number n input from the user. Create an array of numbers from 1 to n.)
+// 1. Use the reduce method to calculate sum of all numbers in the array.
+// 2. Use the reduce method to calculate the product of all numbers in the array.
+
+//1.
+let n = 8;
+let arr= [];
+
+for(let i=1;i<=n;i++){
+    arr[i-1] = i;
+}
+
+let sum = arr.reduce((acc,curr) => {
+    return acc + curr;
+})
+
+console.log(sum);
+
+//2.(Using this we can calculate factorial)
+let prod = arr.reduce((acc,curr) => {
+    return acc * curr;
+})
+
+console.log(prod);
+
+
+
 
 
