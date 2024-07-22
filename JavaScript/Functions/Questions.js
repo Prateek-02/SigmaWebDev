@@ -19,6 +19,7 @@ console.log(res);
 
 // Using Arrow function
 
+/*
 const countVowels = (str) => {
     str = str.toLowerCase();
     let count = 0;
@@ -33,3 +34,13 @@ const countVowels = (str) => {
 
 const res = countVowels("ApnaCollege");
 console.log(res);
+*/
+
+
+// 2(For a given arr of numbers, print the square of each value using for each loop)
+
+let num = [10,20,30,40];
+
+arr.forEach((num) => {
+    console.log(num*num);
+})

@@ -35,3 +35,17 @@ console.log("Second value is: "+ans);
 let ans2 = returnSecondValue([100,200,500,800]);
 console.log("Second value is: "+ans2);
 
+
+
+// callback functions (Higher order functions/methods)
+
+let arr = ["pune","delhi","mumbai"];
+
+arr.forEach((val,idx,arr)=>{
+    // console.log(val);
+    console.log(val.toUpperCase(), idx, arr);
+})
+
+
+
+
