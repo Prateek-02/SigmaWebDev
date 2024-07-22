@@ -39,8 +39,9 @@ console.log(res);
 
 // 2(For a given arr of numbers, print the square of each value using for each loop)
 
-let num = [10,20,30,40];
+let num = [67,52,39];
 
-arr.forEach((num) => {
+let calcSquare = (num) =>{
     console.log(num*num);
-})
+}
+num.forEach(calcSquare);
