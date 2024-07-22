@@ -108,3 +108,12 @@ const shoppingCart = [
 
 const PriceToPay = shoppingCart.reduce( (acc,item) => acc + item.price,0);
 console.log(PriceToPay);
+
+
+let arr = [5,6,2,1,123,3];
+
+const output = arr.reduce ((prev,curr) => {
+    return prev > curr ? prev : curr ;
+})
+
+console.log(output);
