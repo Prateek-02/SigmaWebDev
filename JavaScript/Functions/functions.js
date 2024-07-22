@@ -36,6 +36,6 @@ function loginUserMessage(username){
     return `${username} just logged in`
 }
 
-const res = loginUserMessage("");
+const res = loginUserMessage("Prateek");
 console.log(res);
 
