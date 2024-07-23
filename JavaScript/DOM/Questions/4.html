@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: #212121;
+        }
+        .para{
+            background-color: #919191;
+            color: white;
+        }
+
+        .newPara{
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <p class="para">Hey, i am a Paragraph</p>
+
+    <script>
+        let p = document.querySelector("p");
+        //p.setAttribute("class","newPara");   // overwrite the prevoius class with this new class
+        
+        p.classList.add("newPara")     // append new class
+    </script>
+</body>
+</html>
