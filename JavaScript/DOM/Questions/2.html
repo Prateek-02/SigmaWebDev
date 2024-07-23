@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid slateblue;
+            margin: 10px;
+            text-align: center;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">First div</div>
+    <div class="box">Second div</div>
+    <div class="box">Third div</div>
+
+    <script>
+        let divs = document.querySelectorAll(".box");
+        divs[0].innerText = "new unique value 1";
+        divs[1].innerText = "new unique value 2";
+        divs[2].innerText = "new unique value 3";
+
+        divs.forEach(b => {
+            b.style.backgroundColor = 'red';
+        })
+    </script>
+</body>
+</html>
