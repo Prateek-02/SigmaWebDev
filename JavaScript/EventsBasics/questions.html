@@ -1,0 +1,30 @@
+<!-- 1(toggle button) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="mode">Change mode</button>
+
+    <script>
+        let modeBtn = document.querySelector('#mode');
+        let body = document.querySelector('body');
+
+        let currMode = "light";
+
+        modeBtn.addEventListener('click', () =>{
+            if(currMode === "light"){
+                currMode = "dark";
+                body.style.backgroundColor = "#212121";
+            }
+            else{
+                currMode = "light";
+                body.style.backgroundColor = "white";
+            }
+        })
+    </script>
+</body>
+</html>
