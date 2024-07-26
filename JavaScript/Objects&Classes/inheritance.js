@@ -35,6 +35,8 @@ console.log(enggObj.eat());
 console.log(enggObj.work());    // if child and parent have same method, child's method will be used [Method Overriding];
 console.log(enggObj.sleep());
 
+console.log(enggObj.name);
+
 
 console.log(enggObj);
 
