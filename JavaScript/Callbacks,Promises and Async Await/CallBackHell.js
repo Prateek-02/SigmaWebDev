@@ -44,6 +44,7 @@ function getData(dataId,getNextData){
 }
 
 // callback hell
+
 getData(1,() => {
     console.log("getting data2...");
     getData(2, () => {
@@ -54,5 +55,6 @@ getData(1,() => {
         });
     });
 });
+
 
 // To solve this problem of callback hell we use Promises.
