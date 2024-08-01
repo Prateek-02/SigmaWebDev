@@ -55,3 +55,4 @@ getData(1,() => {
     });
 });
 
+// To solve this problem of callback hell we use Promises.
