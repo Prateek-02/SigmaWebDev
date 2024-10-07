@@ -1,0 +1,3 @@
+React-dom - To work on website
+React-native - To work on Mobile apps
+React fragment :- All elements enclosed inside a single entity is called react fragment (<>....</>)
