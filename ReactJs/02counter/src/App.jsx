@@ -7,7 +7,7 @@ function App() {
 
   const addValue = () =>{
     if(count >= 20){
-      count = 0;
+      setCount(0);
     } 
     else{
       setCount(count+1);
@@ -16,7 +16,7 @@ function App() {
 
   const remValue = () =>{
     if(count <= 0){
-      count = 0;
+      setCount(0);
     }
     else{
       setCount(count - 1);
