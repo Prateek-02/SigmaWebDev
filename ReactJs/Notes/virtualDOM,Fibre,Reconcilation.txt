@@ -1,0 +1,10 @@
+createRoot :- It creates a DOM like structure because it compares main DOM and Virtual DOM
+            and update only those things which are updated in UI.
+            Whereas Browser remove the whole DOM and again create it if there is any change.
+
+Reconciliation:- It is an algo that react uses to differentiate one tree with another to determine which part is to be changed.(createROOT tree and Browser tree)
+
+Fibre:- Pause the work and come back later.
+        Assign priority to different types of work.
+        Reuse previously completed work.
+        Abort work if it's no longer needed.
