@@ -15,9 +15,9 @@ function App() {
     <>
       <h1>Chai Aur react</h1>
       <h2>Counter Value: {counter}</h2>
-      <button onClick={() => setCount(counter+1)}>Add Value</button>
+      <button onClick={() => setCount(counter=>counter+1)}>Add Value</button>
       <br /><br />
-      <button onClick={() => setCount(counter-1)}>Sub Value</button>
+      <button onClick={() => setCount(counter=>counter-1)}>Sub Value</button>
     </>
   )
 }
