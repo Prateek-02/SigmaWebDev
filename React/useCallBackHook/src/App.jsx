@@ -1,24 +1,31 @@
-import { useState } from 'react'
-import ChildComponent from './components/ChildComponent';
-
+import { useCallback, useState } from 'react'
+// import ChildComponent from './components/ChildComponent';
+import ExpensiveComponent from './components/ExpensiveComponent';
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0);
 
+function App() {
+  // const [count, setCount] = useState(0);
+
+  // const handleClick = useCallback(() =>{
+  //   setCount(count+1)
+  // },[count])
 
   return (
     <div>
-      <div>
+
+      <ExpensiveComponent/>
+      {/* <div>
         Count : {count}
       </div>
       <div>
-        <button onClick={() => setCount(count+1)}>Increment</button>
+        <button onClick={handleClick}>Increment</button>
       </div>
       <br />
       <div>
-        <ChildComponent buttonName = "Click Me"/>
-      </div>
+        <ChildComponent buttonName = "Click Me" 
+        handleClick = {handleClick}/>
+      </div> */}
     </div>
   )
 }

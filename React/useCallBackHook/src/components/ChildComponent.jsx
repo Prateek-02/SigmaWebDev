@@ -4,11 +4,11 @@ import React from 'react'
 
 const ChildComponent = React.memo(
   (props) => {
-    console.log("Child component go");
+    console.log("Child component got re-render");
     
     return (
       <div>
-        <button>
+        <button onClick={props.handleClick}>
           {props.buttonName}
         </button>
       </div>
@@ -18,3 +18,4 @@ const ChildComponent = React.memo(
 
 export default ChildComponent
 // React.memo -> wrap -> component -> component re-render tabhi hoga jab props change honge nhi to nahi hoga
+// If you are sending a function then react.memo will not save yo from re-render
