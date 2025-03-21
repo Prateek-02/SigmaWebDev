@@ -4,7 +4,7 @@ import LogoutBtn from "./components/LogoutBtn"
 
 
 function App() {
-  const [isLoggedIn,setLoggedIn] = useState(false)
+  const [isLoggedIn,setLoggedIn] = useState(true)
 
   //1
   // if(isLoggedIn){
@@ -28,7 +28,7 @@ function App() {
   //3 & 4
   if(!isLoggedIn){
     return (
-      <LoginBtn/>
+      <LoginBtn setLoggedIn={setLoggedIn}/>
     )
   }
 
@@ -36,7 +36,7 @@ function App() {
     <div>
       <h1>Welcome everyone to code Help Web dev course</h1>
       <div>
-        {isLoggedIn && <LogoutBtn/>}
+        {isLoggedIn && <LogoutBtn setLoggedIn={setLoggedIn}/>}
       </div>
     </div>
   )
