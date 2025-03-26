@@ -1,9 +1,14 @@
-import { useEffect, useState } from "react"
+// import { useEffect, useState } from "react"
+import DataFetcher from "./components/DataFetcher"
+import LoggerComponent from "./components/LoggerComponent"
+import MultiEffect from "./components/MultiEffect"
+import Resize from "./components/Resize"
+import Timer from "./components/Timer"
 
 
 function App() {
-  const[count,setCount] = useState(0);
-  const[total,setTotal] = useState(0);
+  // const[count,setCount] = useState(0);
+  // const[total,setTotal] = useState(0);
 
   //first -> side effect function
   //second -> cleanup function
@@ -35,31 +40,37 @@ function App() {
 
   //variation:5
   //iss baar lets add a cleanup function
-  useEffect(()=>{
-    alert("Count is updated")
+  // useEffect(()=>{
+  //   alert("Count is updated")
 
-    return() => {
-      alert("Count is unmounted from UI")
-    }
-  },[count])
+  //   return() => {
+  //     alert("Count is unmounted from UI")
+  //   }
+  // },[count])
 
 
-
-  function handleClick(){
-    setCount(count+1);
-  }
-  function handleTotal(){
-    setTotal(total+1);
-  }
+  // function handleClick(){
+  //   setCount(count+1);
+  // }
+  // function handleTotal(){
+  //   setTotal(total+1);
+  // }
 
   return (
+    // <div>
+    //   <button onClick={handleClick}>Update count</button>
+    //   <br />
+    //   <p>Count is: {count}</p>
+    //   <button onClick={handleTotal}>Update total</button>
+    //   <br />
+    //   <p>Total is: {total}</p>
+    // </div>
     <div>
-      <button onClick={handleClick}>Update count</button>
-      <br />
-      <p>Count is: {count}</p>
-      <button onClick={handleTotal}>Update total</button>
-      <br />
-      <p>Total is: {total}</p>
+      {/* <LoggerComponent/> */}
+      {/* <Timer/> */}
+      {/* <DataFetcher/> */}
+      {/* <Resize/> */}
+      <MultiEffect/>
     </div>
   )
 }
