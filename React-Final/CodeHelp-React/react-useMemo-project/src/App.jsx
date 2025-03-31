@@ -7,7 +7,9 @@ function App() {
 
   function expTask(num){
     console.log("Inside expensive task");
-    for(let i =0; i <= 1000000000 ; i++){}
+    for(let i =0; i <= 1000000000 ; i++){
+      <p>hi</p>
+    }
     return num * 2;
   }
 
