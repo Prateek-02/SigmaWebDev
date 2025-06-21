@@ -2,31 +2,19 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-// app.get('/',(req,res)=>{
-//     res.send(('Hello Duniya!'))
-// })
+// import item ki router file
+const item = require('./routes/item')
+const birds = require('./routes/birds')
 
-//Request ki kahani
+//load into application
+app.use('/item', item)
+app.use('/birds', birds)
+// ye file saari routes ko handle karega
 
-//get request
-app.get('/', (req,res) =>{
-    res.send("Got a GET request")
-})
+// -> /api/ -> item home page
+// ->/api/items -> item post request
+// -> /api/items/:id -> item put and delete request
 
-//post request
-app.post('/items',(req,res)=>{
-    res.send("Got a POST request")
-})
-
-//put request
-app.put('/items/:id',(req,res)=>{
-    res.send(`Got a PUT request for ID: ${req.params.id}`)
-})
-
-//delete request
-app.delete('/items/:id',(req,res)=>{
-    res.send(`Got a DELETE request for ID: ${req.params.id}`)
-})
 
 app.listen(port, ()=>{
     console.log(`Listening at http://localhost:${port}`)
