@@ -2,9 +2,11 @@ const express = require('express');
 const app = express();
 const connectDB = require('./db');
 const item = require('./routes/item');
+const dotenv = require('dotenv');
 
-
-const port = 3000;
+//load env config
+dotenv.config();
+const port = process.env.PORT
 
 //body parser
 app.use(express.json());
