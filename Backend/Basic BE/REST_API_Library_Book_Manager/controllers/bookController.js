@@ -3,9 +3,6 @@ const books = [];
 
 const getAllBooks = (req,res) =>{
     try{
-        if(books.length === 0) {
-            return res.status(404).json({message: 'No books found'});   
-        }
         // Return all books
         res.status(200).json(books)
     }
