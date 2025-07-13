@@ -3,6 +3,8 @@ const app = express();
 const port = 3000;
 const tasksRouter = require('./routes/tasks');
 app.use(express.json());
+const cors = require('cors');
+app.use(cors());
 
 app.use('/tasks', tasksRouter);
 
