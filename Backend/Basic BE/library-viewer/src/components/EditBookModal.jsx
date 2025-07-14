@@ -39,7 +39,6 @@ function EditBookModal({book, onClose}) {
             background: 'black',
             padding: '1rem',
             border: '1px solid #ccc',
-            zIndex: 1000
         }}>
             <h3>Edit Book</h3>
             {error && <p style={{ color: 'red' }}>{error}</p>}
