@@ -7,7 +7,7 @@ function AddBookForm({refreshBook}) {
     const [title,setTitle] = useState('');
     const [author,setAuthor] = useState('');
     const [genre,setGenre] = useState('');
-    const [available,setAvailable] = useState(true);
+    const [available,setAvailable] = useState(null);
     const [error,setError] = useState(null);
 
     const handleSubmit = async (e) =>{
@@ -25,7 +25,7 @@ function AddBookForm({refreshBook}) {
             setTitle('');
             setAuthor('');  
             setGenre('');
-            setAvailable(true);
+            setAvailable(false);
             setError(null);
             alert('Book added successfully');
             refreshBook();
