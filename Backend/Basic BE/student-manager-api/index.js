@@ -1,7 +1,15 @@
 const express = require('express');
 const app = express();
-const port = 3000;
 const studentRoutes = require('./routes/studentRoutes')
+const dotenv = require('dotenv');
+const connectDB = require('./config/db');
+
+//load env config
+dotenv.config();
+const port = process.env.PORT
+
+//connect to DB
+connectDB();
 
 //middleware to parse json
 app.use(express.json());
