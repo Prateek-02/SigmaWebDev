@@ -1,4 +1,4 @@
-// CallBack Hell:- Nested callbacks staked below one another forming a pyramid structure.(Pyramid doom)
+// CallBack Hell:- Nested callbacks stacked below one another forming a pyramid structure.(Pyramid doom)
 // This style of programming becomoes difficult to understand & manange
 
 const { get } = require("mongoose");

@@ -1,4 +1,4 @@
-// 1. create a user class with two properties name and email.It also ahs a method called viewData() that allows user to view the website data
+// 1. create a user class with two properties name and email.It also has a method called viewData() that allows user to view the website data
 
 /*
 let DATA = "Secret Information";
