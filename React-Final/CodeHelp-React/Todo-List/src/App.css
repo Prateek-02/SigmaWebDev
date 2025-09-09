@@ -1,0 +1,10 @@
+body{
+    background: #4a4949;
+}
+
+ul{
+    list-style: none;
+}
+.strikeThrough{
+    text-decoration: line-through;
+}
