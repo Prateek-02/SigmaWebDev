@@ -5,6 +5,9 @@ function Todo() {
     const [todos,setTodos] = useState([]);
 
     function addTodo(){
+        if(input === ""){
+            return;
+        }
         const item = {
             id : todos.length +1,
             text: input,
@@ -41,6 +44,7 @@ function Todo() {
     return (
         <div>
             <input type="text"
+             required
              placeholder='Enter Todo' 
              value={input}
              onChange={(e) => setInput(e.target.value)}
